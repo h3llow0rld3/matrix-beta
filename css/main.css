@@ -1,0 +1,70 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(249, 249, 249);
+  font-family: "Segoe UI", Arial,sans-serif;
+}
+
+#main {
+  margin: 30px;
+  margin-top: 8px;
+  padding: 30px;
+  padding-top: 0px;
+  margin-right: 280px;
+  margin-right: 18%;
+  /* position: relative; */
+  user-select: none;
+}
+
+#logo {
+  text-align: center;
+}
+
+#logo img {
+  height: 100px;
+}
+
+#prompt {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  border-radius: .3vw;
+  background-color: #070707;
+  opacity: .7;
+  color: white;
+  padding: 3px 6px;
+  position: absolute;
+  display: block;
+  min-width: 10px;
+  z-index: 1000;
+}
+
+#prompt {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  border-radius: .3vw;
+  background-color: #070707;
+  opacity: .8;
+  color: white;
+  padding: 3px 6px;
+  position: absolute;
+  display: block;
+  min-width: 10px;
+  z-index: 1000;
+}
+
+.numeric-input::selection {
+  background-color: rgba(26, 26, 26, 0.119);
+}
+
+
+@media only screen and (max-width: 700px) {
+  #main {
+    margin: 30px;
+    margin-top: 90px;
+    padding: 30px;
+    padding-top: 0px;
+    margin-right: 0px;
+    /* position: relative; */
+    user-select: none;
+  }
+}

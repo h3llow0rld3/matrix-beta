@@ -1,0 +1,173 @@
+.container ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.inputs-container {
+  text-align: center;
+  margin: 5px;
+}
+
+.container ::-webkit-scrollbar-track {
+  border-radius: 1px;
+  opacity: 0;
+}
+
+.container ::-webkit-scrollbar-track:hover {
+  background: rgb(237, 237, 237);
+  box-shadow: inset 1px 1px 0 rgb(216, 216, 216);
+}
+
+.container ::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background: rgb(210, 210, 210);
+  box-shadow: inset 1px -1px rgb(195, 195, 195); 
+}
+
+.container ::-webkit-scrollbar-thumb:hover {
+  background: rgb(170, 170, 170);
+  box-shadow: inset 1px -1px rgb(157, 157, 157);
+}
+
+.container ::-webkit-scrollbar-thumb:active {
+  background: rgb(132, 132, 132);
+  box-shadow: inset 1px -1px rgb(115, 115, 115);
+}
+
+
+.operands-container, .results {
+  position: relative;
+  max-height: 800px;
+  overflow: auto;
+  margin-top: 20px;
+}
+
+.operands-container {
+  width: 100%;
+}
+
+.results {
+  border-radius: 10px;
+  background-color: #111;
+  /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
+}
+
+.drop-down-panel {
+  margin: 6px;
+  padding: 2px;
+  border-radius: 5px;
+  background-image: linear-gradient(to left,rgb(235, 235, 235), rgb(221, 221, 221));
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+}
+
+.drop-down-panel .title {
+  color: rgb(241, 241, 241);
+  user-select: none;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 10px;
+  cursor:pointer; 
+  transition: background 0.3s ease-out;
+}
+
+.drop-down-panel.active .title {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* .drop-down-panel .content, .drop-down-panel .title {
+  background-image: linear-gradient(to left,rgb(235, 235, 235), rgb(221, 221, 221));
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+} */
+
+.drop-down-panel .content {
+  overflow: hidden;
+  /* background-color: rgb(232, 232, 232); */
+  max-height: 400px;
+  height: 0px;
+  transition: all 0.3s;
+  border-color: black;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: white;
+  overflow: auto;
+}
+
+.drop-down-panel .content .content-container {
+  padding: 5px;
+}
+
+.drop-down-panel.active .content {
+  padding-left: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+}
+
+.operator-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  transition: background-color .3s, border-color .8s;
+  border-color: rgba(183, 183, 183, 0);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.operator-button:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.operator-button:active {
+  background-color: rgb(218, 218, 218);
+  border-color: rgb(218, 218, 218);
+}
+
+.operator-button i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 34px;
+}
+
+.operands-table {
+  text-align: center;
+}
+
+.operands-table .operand-td {
+  width: 30%;
+}
+
+.operands-table .operator-button-td {
+  width: 5%;
+}
+
+.operator-button-td .operator-button {
+  display: inline-block;
+  margin: auto;
+}
+
+.right-operand-td {
+  text-align: left;
+}
+
+.left-operand-td {
+  text-align: right;
+}
+
+/* .right-operand-td .right-operand {
+  float: left;
+}
+
+.left-operand-td .left-operand {
+  float: right;
+} */
+
+.operands-table .right > * {
+  float: left;
+}
+
+.operands-table .left > * {
+  float: right;
+}

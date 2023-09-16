@@ -1,0 +1,46 @@
+.matrix-properties {
+  border-collapse: collapse;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.matrix-properties thead th {
+  background-color: rgb(22, 186, 71);
+
+  background-color: #009879;
+  background-color: #0081ac;
+  color: #ffffff;
+  text-align: left;
+}
+
+.matrix-properties th,
+.matrix-properties td {
+    padding: 12px 15px;
+}
+
+.matrix-properties tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.matrix-properties tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.matrix-properties tbody tr:last-of-type {
+  border-bottom: none;
+}
+
+.matrix-properties tbody tr:hover {
+  /* font-weight: bold; */
+  color: #009879;
+  color: #0081ac;
+}
+
+/* .matrix-properties td {
+  border: solid black 1px;
+}
+
+.matrix-properties tbody tr:hover {
+  background-color: rgb(185, 185, 185);
+} */

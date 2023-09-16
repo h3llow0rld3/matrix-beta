@@ -1,0 +1,18 @@
+.matrix-result {
+  border-collapse: collapse;
+  /* background-color: rgb(241, 241, 241);
+  border-radius: 10px; */
+}
+
+.matrix-result td {
+  border: solid rgb(94, 94, 94) 1px;
+  min-width: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 3px;
+  transition: background-color .2s;
+}
+
+.matrix-result td:hover {
+  background-color: rgb(216, 216, 216);
+}
